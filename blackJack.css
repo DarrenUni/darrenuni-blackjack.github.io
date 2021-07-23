@@ -1,0 +1,160 @@
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: green;
+    background: url(/Images/hdGoldBackground.jpg);
+    background-size: fill;
+}
+
+#header {
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    background-color:black;
+    color: white;
+    border-bottom: inset orange;
+    background: url("/Images/tableHead.jpg");
+    background-size: fill;
+}
+
+#header h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 3px 3px 5px #00a71c;
+    font-size: 55px;
+}
+
+#header label {
+    position: relative;
+    font-size: 26px;
+    left: 10px;
+    vertical-align: middle;
+}
+
+#header input {
+    width: 100px;
+    margin-left: 30px;
+    height: 15px;
+    color: rgb(255, 74, 74);
+    font-weight: bold;
+}
+
+#lblWinnings {
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+#pcCardArea {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 0.5%;
+    width: 98%;
+    height: 200px;
+    background-color: grey;
+    border: double gold;
+    display: flex;
+    justify-content: center;
+    background: url("Images/table.jpg");
+    background-size: contain;
+}
+
+#playerCardArea {
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 0.5%;
+    width: 98%;
+    height: 200px;
+    background-color: grey;
+    border: solid gold;
+    display: flex;
+    justify-content: center;
+    background: url("Images/table.jpg");
+    background-size: contain;
+}
+
+#pcCardArea button, #playerCardArea button {
+    font-size: 30px;
+    margin: 10px;
+    height: 180px;
+    width: 127px;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+#controlPanel button:hover {
+    background-color: rgba(0, 129, 0);
+    border: solid 2px gold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#pcCardArea label, #playerCardArea label {
+    position: absolute;
+    left: 0;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gold;
+}
+
+#controlPanel {
+    position: absolute;
+    margin-top: 730px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#controlPanel button {
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+    background-color: rgb(24, 24, 24);
+    border-color: white;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Class for back of card of PC card 2 */
+.pcTwo {
+    background: url("/Images/cardBack.jpg");
+    background-size: contain;
+}
+
+/* .cardBack {
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+} */
+
+#winLose {
+    position: absolute;
+    top: 430px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+}
+
+#winLose label {
+    font-size: 40px;
+    color: white;
+}
+
+.disabled {
+    pointer-events: none;
+    background-color: gray;
+    border: none;
+    color: rgb(190, 190, 190);
+    opacity: 0.7;
+}
